@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -16,9 +15,6 @@ public class Comparator {
     public ComparingResult compare(Answer answer, Guess guess) {
         List<Character> answerCharList = Lists.charactersOf(answer.getAnswer());
         List<Character> guessCharList = Lists.charactersOf(guess.getGuess());
-
-        handlePreciseMatch(answerCharList, guessCharList);
-        handleFuzzyMatch(answerCharList, guessCharList);
 
         return ComparingResult.of(handlePreciseMatch(answerCharList, guessCharList), handleFuzzyMatch(answerCharList, guessCharList));
     }

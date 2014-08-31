@@ -1,4 +1,4 @@
-package org.shizhz.numberguessing;
+package org.shizhz.game.v1;
 
 import org.junit.Before;
 import org.junit.Test;

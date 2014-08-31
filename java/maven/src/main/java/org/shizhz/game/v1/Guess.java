@@ -1,4 +1,4 @@
-package org.shizhz.numberguessing;
+package org.shizhz.game.v1;
 
 /**
  * Created by zzshi on 8/25/14.

@@ -1,4 +1,4 @@
-package org.shizhz.numberguessing;
+package org.shizhz.game.v1;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
